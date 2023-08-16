@@ -2,38 +2,43 @@
   "name": "espMqttClient",
   "keywords": "iot, home, automation, mqtt, client, esp8266, esp32",
   "description": "an MQTT client for the Arduino framework for ESP8266 / ESP32",
-  "authors":
-  {
+  "authors": [{
     "name": "Bert Melis",
     "url": "https://github.com/bertmelis"
   },
-  "license": "MIT",
-  "homepage": "https://github.com/bertmelis/espMqttClient",
-  "repository":
   {
+    "name": "Tobias Weidelt"    
+  }  
+],
+  "license": "MIT",
+  "homepage": "https://github.com/tweidelt/espMqttClient",
+  "repository": {
     "type": "git",
-    "url": "https://github.com/bertmelis/espMqttClient.git"
+    "url": "https://github.com/tweidelt/espMqttClient.git"
   },
   "version": "1.4.4",
   "frameworks": "arduino",
-  "platforms": ["espressif8266", "espressif32"],
-  "headers": ["espMqttClient.h", "espMqttClientAsync.h"],
+  "platforms": [
+    "espressif8266",
+    "espressif32"
+  ],
+  "headers": [
+    "espMqttClient.h",
+    "espMqttClientAsync.h"
+  ],
   "dependencies": [
     {
-      "owner": "me-no-dev",
+      "platforms": "espressif8266",
       "name": "ESPAsyncTCP",
-      "version": ">=1.2.2",
-      "platforms": "espressif8266"
+      "version": "https://github.com/philbowles/ESPAsyncTCP.git#2.0.1"
     },
     {
-      "owner": "me-no-dev",
+      "platforms": "espressif32",
       "name": "AsyncTCP",
-      "version": ">=1.1.1",
-      "platforms": "espressif32"
+      "version": "https://github.com/philbowles/AsyncTCP.git#0.0.1"
     }
   ],
-  "build":
-  {
+  "build": {
     "libLDFMode": "deep+"
   }
 }

@@ -1,3 +1,7 @@
+Fork which uses [Phil Bowles]'(https://github.com/philbowles) variants of the dependencies.
+
+---
+
 # espMqttClient
 
 MQTT client library for the Espressif devices ESP8266 and ESP32 on the Arduino framework.
